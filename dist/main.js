@@ -1,1 +1,1 @@
-console.log("Hello Daimler!");
+(()=>{"use strict";console.log("test"),function(){const e=document.querySelector("body");e.style.backgroundImage='url("../img/background-image.jpg")',e.style.backgroundSize="cover",e.style.backgroundRepeat="no-repeat",e.style.backgroundAttachment="fixed",e.style.backgroundPosition="center";const t=document.createElement("div");t.style.position="fixed",t.style.top="0",t.style.left="0",t.style.width="100%",t.style.height="100%",t.style.backgroundColor="rgba(0,0,0,0.5)",e.appendChild(t)}()})();
