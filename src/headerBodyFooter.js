@@ -6,7 +6,7 @@ function backgroundImage() {
 	body.style.backgroundAttachment = 'fixed';
 
 	const overlay = document.createElement('div');
-	overlay.style.position = 'absolute';
+	overlay.style.position = 'fixed';
 	overlay.style.top = '0';
 	overlay.style.left = '0';
 	overlay.style.width = '100%';
@@ -57,4 +57,21 @@ function createNavbar() {
 	return nav;
 }
 
-export { createHeader, createNavbar, backgroundImage };
+function createMain() {
+	const main = document.createElement('main');
+	main.classList.add('main-container');
+
+	return main;
+}
+
+function createFooter() {
+	const footer = document.createElement('footer');
+	footer.classList.add('footer');
+
+	const h1 = document.createElement('h1');
+	h1.textContent = '© 2023 Starbuko Company. All rights reserved';
+	footer.appendChild(h1);
+	return footer;
+}
+
+export { createHeader, createMain, createFooter, backgroundImage };
