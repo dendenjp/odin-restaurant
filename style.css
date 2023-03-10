@@ -16,12 +16,13 @@ html {
 
 li {
 	list-style: none;
-	transition: all 0.5s ease;
+	transition: all 0.2s ease;
 }
 
 li:hover {
 	cursor: pointer;
-	transform: translateY(-10px);
+	transform: translateY(-5px);
+	color: #00754a;
 }
 
 /* HEADER */
@@ -46,6 +47,9 @@ li:hover {
 .active {
 	border-bottom: 2px solid #fff;
 }
+.active:hover {
+	border-bottom: 2px solid #00754a;
+}
 
 .navbar {
 	display: block;
@@ -64,4 +68,26 @@ li:hover {
 	font-size: 2rem;
 	color: #fff;
 	padding: 2rem 2rem 2rem 2rem;
+}
+
+/* MAIN */
+
+.main-container {
+	margin: 5rem auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 800px;
+	height: 1200px;
+
+	border-radius: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 0.8rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0rem;
 }
