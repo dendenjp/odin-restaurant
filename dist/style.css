@@ -17,6 +17,7 @@
 html {
 	font-size: 62.5%;
 	font-family: 'santana-black', sans-serif;
+	overflow-y: scroll;
 }
 
 li {
@@ -94,12 +95,9 @@ li:hover {
 	border-radius: 10px;
 }
 
-.main-content-margin {
-	margin: 5rem;
-}
-
 /* HOME(under main) */
-.home-content {
+.tab-container {
+	margin: 5rem;
 	font-family: 'santana', sans-serif;
 	font-size: 2rem;
 	color: #fff;
@@ -112,12 +110,10 @@ li:hover {
 }
 
 .home-image {
-	border-radius: 10px;
 	max-width: 100%;
+	object-fit: cover;
 	height: 400px;
-}
-
-.home-image-container {
+	border-radius: 50%;
 }
 
 /* FOOTER */

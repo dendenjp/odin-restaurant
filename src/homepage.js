@@ -1,7 +1,6 @@
+const home = document.createElement('div');
 function homePage() {
-	const home = document.createElement('div');
-	home.classList.add('home-content');
-	home.classList.add('main-content-margin');
+	home.classList.add('tab-container');
 
 	const h1 = document.createElement('h1');
 	h1.textContent = 'Welcome to STARBUKO!';
@@ -35,3 +34,4 @@ function homePage() {
 }
 
 export { homePage };
+export { home };
