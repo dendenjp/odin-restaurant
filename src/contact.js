@@ -1,5 +1,5 @@
-const contact = document.createElement('div');
 function contactPage() {
+	const contact = document.createElement('div');
 	contact.classList.add('tab-container');
 
 	const h1 = document.createElement('h1');
@@ -30,4 +30,3 @@ function contactPage() {
 }
 
 export default contactPage;
-export { contact };

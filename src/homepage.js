@@ -1,5 +1,5 @@
-const home = document.createElement('div');
 function homePage() {
+	const home = document.createElement('div');
 	home.classList.add('tab-container');
 
 	const h1 = document.createElement('h1');
@@ -34,4 +34,3 @@ function homePage() {
 }
 
 export { homePage };
-export { home };

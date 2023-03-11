@@ -1,5 +1,5 @@
-const menu = document.createElement('div');
 function menuPage() {
+	const menu = document.createElement('div');
 	menu.classList.add('tab-container');
 
 	const h1 = document.createElement('h1');
@@ -31,4 +31,3 @@ function menuPage() {
 }
 
 export default menuPage;
-export { menu };

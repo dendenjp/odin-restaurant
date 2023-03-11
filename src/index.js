@@ -7,16 +7,15 @@ import {
 import { homePage } from './homepage.js';
 import menuPage from './menu.js';
 import contactPage from './contact.js';
-import { home as homeTab } from './homepage.js';
-import { menu as menuTab } from './menu.js';
-import { contact as contactTab } from './contact.js';
 
 function initWebsite() {
 	backgroundImage();
 	const contentDiv = document.querySelector('#content');
+
 	const headerContent = createHeader();
 	const mainContent = createMain();
 	const footerContent = createFooter();
+
 	const home = homePage();
 	const menu = menuPage();
 	const contact = contactPage();
@@ -25,22 +24,15 @@ function initWebsite() {
 	contentDiv.appendChild(mainContent);
 	contentDiv.appendChild(footerContent);
 
-	mainContent.appendChild(home);
-	mainContent.appendChild(menu);
-	mainContent.appendChild(contact);
-
 	const homeBtn = document.querySelector('.home');
 	const menuBtn = document.querySelector('.menu');
 	const contactBtn = document.querySelector('.contact');
-	menuTab.style.display = 'none';
-	contactTab.style.display = 'none';
-	// menuBtn.classList.add('active');
-	console.log(menuTab);
+
+	mainContent.appendChild(home);
 
 	homeBtn.addEventListener('click', () => {
-		homeTab.style.display = 'flex';
-		menuTab.style.display = 'none';
-		contactTab.style.display = 'none';
+		mainContent.innerHTML = '';
+		mainContent.appendChild(home);
 
 		homeBtn.classList.add('active');
 		menuBtn.classList.remove('active');
@@ -48,9 +40,8 @@ function initWebsite() {
 	});
 
 	menuBtn.addEventListener('click', () => {
-		homeTab.style.display = 'none';
-		menuTab.style.display = 'flex';
-		contactTab.style.display = 'none';
+		mainContent.innerHTML = '';
+		mainContent.appendChild(menu);
 
 		homeBtn.classList.remove('active');
 		menuBtn.classList.add('active');
@@ -58,9 +49,8 @@ function initWebsite() {
 	});
 
 	contactBtn.addEventListener('click', () => {
-		homeTab.style.display = 'none';
-		menuTab.style.display = 'none';
-		contactTab.style.display = 'flex';
+		mainContent.innerHTML = '';
+		mainContent.appendChild(contact);
 
 		homeBtn.classList.remove('active');
 		menuBtn.classList.remove('active');
