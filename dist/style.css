@@ -3,6 +3,11 @@
 	src: url('../fonts/Santana-Black.ttf');
 }
 
+@font-face {
+	font-family: 'santana';
+	src: url('../fonts/Santana.ttf');
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -23,6 +28,12 @@ li:hover {
 	cursor: pointer;
 	transform: translateY(-5px);
 	color: #00754a;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 /* HEADER */
@@ -73,21 +84,49 @@ li:hover {
 /* MAIN */
 
 .main-container {
+	flex: 1;
+
+	max-width: 800px;
 	margin: 5rem auto;
 	background-color: rgba(0, 0, 0, 0.3);
-	width: 800px;
-	height: 1200px;
+	/* height: 1200px; */
 
 	border-radius: 10px;
+}
+
+.main-content-margin {
+	margin: 5rem;
+}
+
+/* HOME(under main) */
+.home-content {
+	font-family: 'santana', sans-serif;
+	font-size: 2rem;
+	color: #fff;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.home-image {
+	border-radius: 10px;
+	max-width: 100%;
+	height: 400px;
+}
+
+.home-image-container {
 }
 
 /* FOOTER */
 
 .footer {
 	background-color: rgba(0, 0, 0, 0.7);
-	font-size: 0.8rem;
+	font-size: 0.5rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #fff;
 	text-align: center;
-	padding: 1rem 0rem;
+	padding: 0.5rem 0rem;
 }

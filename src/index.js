@@ -4,13 +4,20 @@ import {
 	backgroundImage,
 	createFooter,
 } from './headerBodyFooter.js';
+import { homePage } from './homepage.js';
 
 function initWebsite() {
 	const contentDiv = document.querySelector('#content');
-	contentDiv.appendChild(createHeader());
-	// contentDiv.appendChild(createNavbar());
-	contentDiv.appendChild(createMain());
-	contentDiv.appendChild(createFooter());
+	const headerContent = createHeader();
+	const mainContent = createMain();
+	const footerContent = createFooter();
+	const home = homePage();
+
+	contentDiv.appendChild(headerContent);
+	contentDiv.appendChild(mainContent);
+	contentDiv.appendChild(footerContent);
+
+	mainContent.appendChild(home);
 	backgroundImage();
 }
 
