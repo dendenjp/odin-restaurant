@@ -59,5 +59,3 @@ function initWebsite() {
 }
 
 initWebsite();
-
-// homePage();

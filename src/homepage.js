@@ -16,7 +16,6 @@ function homePage() {
 
 	const homeImageContainer = document.createElement('div');
 	homeImageContainer.classList.add('home-image-container');
-	console.log(homeImageContainer);
 
 	const homeImage = document.createElement('img');
 	homeImage.classList.add('home-image');
